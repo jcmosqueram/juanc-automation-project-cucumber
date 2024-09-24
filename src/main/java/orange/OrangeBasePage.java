@@ -4,6 +4,8 @@ import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 
+
+
 import java.util.concurrent.TimeUnit;
 
 public class OrangeBasePage {
@@ -37,13 +39,11 @@ public class OrangeBasePage {
         driver.close();
     }
 
-    public void addWait(){
+    public void addImplicitlyWait(){
         driver.manage().timeouts().implicitlyWait(15, TimeUnit.SECONDS);
     }
 
-    public void addWait2(){
-        driver.manage().timeouts().implicitlyWait(25, TimeUnit.SECONDS);
+    public void clear(By locator){
+        driver.findElement(locator).clear();
     }
-
-
 }

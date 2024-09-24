@@ -5,7 +5,7 @@ import org.openqa.selenium.By;
 
 public class ProductsPage extends BasePage{
 
-    private By productsTitle = By.xpath("//span[@class='title']");
+    private final By productsTitle = By.xpath("//span[@class='title']");
 
     public ProductsPage() {
         super(driver);

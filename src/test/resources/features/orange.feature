@@ -9,3 +9,5 @@ Scenario: created new user
 
   Given the system administrator is logged with valid credentials
   When the system administrator creates a new user
+  Then the system administrator should be taken to new user's personal detail page
+

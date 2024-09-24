@@ -5,9 +5,9 @@ import org.openqa.selenium.By;
 
 public class OrangeLoginPage extends OrangeBasePage {
 
-    private By userNameInput = By.name("username");
-    private By passWordInput = By.name("password");
-    private By loginButton = By.xpath("//button[@type='submit']");
+    private final By userNameInput = By.name("username");
+    private final By passWordInput = By.name("password");
+    private final By loginButton = By.xpath("//button[@type='submit']");
 
 
     public OrangeLoginPage() {
